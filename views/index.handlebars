@@ -1,0 +1,40 @@
+<div class="container">
+    
+    <div class="row text-center">Entered Burgers
+        {{#each burgers}}
+            {{#unless this.devoured}}
+        <ul>    
+            <li>
+                <div>{{this.burger_name}}<a>Devour</a>
+                </div>
+            </li>
+        </ul>    
+    </div>
+        {{/unless}}
+        {{/each}}
+    </div>
+        <div class="col text-right">
+            <ul>
+                <li>
+                    <h4>Burger Graveyard</h4>
+                        </li>
+                        {{#each burgers}}
+                        {{#if this.devoured}}
+                        <li>
+                            <div>{{this.burger_name}}
+                            </div>
+                        </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <p>Add a burger</p>
+            <input id="burgerInput" type="text" placeholder="example burger">
+            <button id="submitButton" type="submit" name="action">Submit</button>
+        </div>
+    </div>
+</div>
