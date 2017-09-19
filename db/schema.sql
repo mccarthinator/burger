@@ -1,6 +1,10 @@
+drop database burgerDB if exists;
+
 create database burgerDB;
 
 use burgerDB;
+
+DROP TABLE IF EXISTS burgers;
 
 CREATE TABLE burgers(
 id INT NOT NULL AUTO_INCREMENT,
