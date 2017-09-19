@@ -1,4 +1,4 @@
-drop database burgerDB if exists;
+drop database if exists burgerDB;
 
 create database burgerDB;
 
