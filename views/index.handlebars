@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 text-center" id="top-bar">
-			<img src="/assets/images/burger.png" alt="burger" />
+			{{!-- <img src="/assets/images/burger.png" alt="burger" /> --}}
 			<h1> Eat-Da-Burger! </h1>
 		</div>
 		<div class="col-xs-6 text-center" class="task">
@@ -26,7 +26,7 @@
 		<div class="col-xs-6 text-center" class="task">
 			  {{#each burger_data}}
 			  	{{#if this.devoured}}
-			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
+			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
 				{{/if}}
 			  {{/each}}
 		</div>
